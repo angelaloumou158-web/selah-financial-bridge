@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selah Financial Bridge</title>
+<style>
+*{box-sizing:border-box}
+body{width:300px;margin:0;padding:16px;font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#172033}
+h2{margin:0 0 5px;color:#6d28d9;font-size:19px}
+.intro{font-size:12px;color:#64748b;margin:0 0 12px;line-height:1.4}
+label{display:block;font-size:12px;font-weight:650;margin:10px 0 5px}
+select,button{width:100%;padding:10px;border-radius:8px;font-size:13px}
+select{border:1px solid #cbd5e1;background:white;color:#172033}
+button{border:0;font-weight:700;cursor:pointer;margin-top:9px}
+button:disabled{opacity:.55;cursor:wait}
+.primary{background:#6d28d9;color:white}
+.secondary{background:#e2e8f0;color:#172033}
+.audio{background:#2563eb;color:white}
+#status{font-size:12px;line-height:1.4;margin-top:11px;padding:9px;border-radius:7px;background:#f5f3ff;color:#5b21b6;min-height:32px}
+.note{font-size:11px;color:#64748b;line-height:1.4;margin:8px 0 0}
+hr{border:0;border-top:1px solid #e2e8f0;margin:13px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ui-lang{display:flex;gap:2px;flex-shrink:0}
+.ui-lang button{width:auto;margin:0;padding:4px 8px;font-size:11px;border-radius:6px;background:#e2e8f0;color:#334155}
+.ui-lang button[aria-pressed="true"]{background:#6d28d9;color:#fff}
+</style>
+</head>
+<body>
+<div class="head"><h2>Selah Financial Bridge</h2>
+<div class="ui-lang" role="group" aria-label="Interface language / Langue de l'interface"><button id="uiFr" aria-pressed="true">FR</button><button id="uiEn" aria-pressed="false">EN</button></div></div>
+<p class="intro" data-i18n="intro">Traduisez l'interface (française ou anglaise, détectée automatiquement) et écoutez les explications dans la langue choisie.</p>
+
+<label for="languageSelect" data-i18n="translateTo">Traduire vers</label>
+<select id="languageSelect">
+<option value="pidgin" data-i18n="optPidgin">Pidgin camerounais</option>
+<option value="duala">Duala</option>
+<option value="fulfulde">Fulfulde</option>
+</select>
+
+<button id="translateBtn" class="primary" data-i18n="translateBtn">Traduire l'interface</button>
+<button id="restoreBtn" class="secondary" data-i18n="restoreBtn">Afficher le texte d'origine</button>
+
+<hr>
+<label for="voiceLangSelect" data-i18n="voiceLabel">Langue des commandes vocales</label>
+<select id="voiceLangSelect">
+<option value="fr">Français</option>
+<option value="en">English</option>
+</select>
+<button id="micBtn" class="audio" data-i18n="micBtn">🎙️ Parler à Selah</button>
+<button id="listenBtn" class="audio" data-i18n="listenBtn">🔊 Écouter</button>
+
+<p class="note" id="voiceHelp" data-i18n="note1">Pidgin et Duala : voix enregistrée par l’équipe. Fulfulde : voix française du navigateur (voix enregistrée prévue plus tard).</p>
+<p class="note" data-i18n="note2">Commandes vocales (français ou anglais) : solde, frais, transfert, récapitulatif, avertissement, annuler, répéter. La réponse s’affiche et se dit à voix haute. Une commande vocale ne valide jamais une opération.</p>
+<div id="status" role="status" aria-live="polite"></div>
+<script src="popup.js"></script>
+</body>
+</html>

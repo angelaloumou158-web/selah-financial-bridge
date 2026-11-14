@@ -1,0 +1,572 @@
+{
+ "language": "pidgin",
+ "source": "../../../sources-audio/pidgin-complet.mp3",
+ "clips": [
+  {
+   "id": 1,
+   "file": "audio/pidgin/p01.mp3",
+   "text": "Welcome, Angela!",
+   "start": 7.42,
+   "end": 8.97,
+   "alternates": []
+  },
+  {
+   "id": 2,
+   "file": "audio/pidgin/p02.mp3",
+   "text": "Selah Bridge dey help you understand your money matter. Use the extension make you fit see this page for your local language anytime.",
+   "start": 15.29,
+   "end": 23.19,
+   "alternates": []
+  },
+  {
+   "id": 3,
+   "file": "audio/pidgin/p03.mp3",
+   "text": "Money wey remain.",
+   "start": 28.84,
+   "end": 30.17,
+   "alternates": []
+  },
+  {
+   "id": 4,
+   "file": "audio/pidgin/p04.mp3",
+   "text": "Charges.",
+   "start": 35.22,
+   "end": 36.26,
+   "alternates": []
+  },
+  {
+   "id": 5,
+   "file": "audio/pidgin/p05.mp3",
+   "text": "Send money.",
+   "start": 40.76,
+   "end": 41.87,
+   "alternates": []
+  },
+  {
+   "id": 6,
+   "file": "audio/pidgin/p06.mp3",
+   "text": "Account.",
+   "start": 46.96,
+   "end": 47.95,
+   "alternates": []
+  },
+  {
+   "id": 7,
+   "file": "audio/pidgin/p07.mp3",
+   "text": "Send.",
+   "start": 53.16,
+   "end": 53.99,
+   "alternates": []
+  },
+  {
+   "id": 8,
+   "file": "audio/pidgin/p08.mp3",
+   "text": "Confirm.",
+   "start": 59.34,
+   "end": 60.34,
+   "alternates": []
+  },
+  {
+   "id": 9,
+   "file": "audio/pidgin/p09.mp3",
+   "text": "Cancel.",
+   "start": 65.57,
+   "end": 66.52,
+   "alternates": []
+  },
+  {
+   "id": 10,
+   "file": "audio/pidgin/p10.mp3",
+   "text": "Amount.",
+   "start": 73.36,
+   "end": 74.39,
+   "alternates": []
+  },
+  {
+   "id": 11,
+   "file": "audio/pidgin/p11.mp3",
+   "text": "Person wey go collect.",
+   "start": 82.4,
+   "end": 83.68,
+   "alternates": []
+  },
+  {
+   "id": 12,
+   "file": "audio/pidgin/p12.mp3",
+   "text": "Warning.",
+   "start": 89.78,
+   "end": 90.75,
+   "alternates": []
+  },
+  {
+   "id": 13,
+   "file": "audio/pidgin/p13.mp3",
+   "text": "Safe.",
+   "start": 96.23,
+   "end": 97.2,
+   "alternates": []
+  },
+  {
+   "id": 14,
+   "file": "audio/pidgin/p14.mp3",
+   "text": "Help.",
+   "start": 102.84,
+   "end": 103.62,
+   "alternates": []
+  },
+  {
+   "id": 15,
+   "file": "audio/pidgin/p15.mp3",
+   "text": "Dashboard.",
+   "start": 109.75,
+   "end": 110.84,
+   "alternates": []
+  },
+  {
+   "id": 16,
+   "file": "audio/pidgin/p16.mp3",
+   "text": "Settings.",
+   "start": 117.95,
+   "end": 119.14,
+   "alternates": []
+  },
+  {
+   "id": 17,
+   "file": "audio/pidgin/p17.mp3",
+   "text": "Financial place wey everybody fit use.",
+   "start": 125.88,
+   "end": 128.66,
+   "alternates": []
+  },
+  {
+   "id": 18,
+   "file": "audio/pidgin/p18.mp3",
+   "text": "Manage your money matter easy.",
+   "start": 134.85,
+   "end": 137.54,
+   "alternates": []
+  },
+  {
+   "id": 19,
+   "file": "audio/pidgin/p19.mp3",
+   "text": "Check the amount well before you confirm the money send.",
+   "start": 155.05,
+   "end": 159.1,
+   "alternates": [
+    [
+     144.4,
+     145.6
+    ]
+   ]
+  },
+  {
+   "id": 20,
+   "file": "audio/pidgin/p20.mp3",
+   "text": "You wan confirm say you go send 25 000 FCFA go give Mme Zang?",
+   "start": 167.05,
+   "end": 171.66,
+   "alternates": []
+  },
+  {
+   "id": 21,
+   "file": "audio/pidgin/p21.mp3",
+   "text": "You don send the money successful!",
+   "start": 180.85,
+   "end": 183.2,
+   "alternates": [
+    [
+     191.3,
+     192.3
+    ],
+    [
+     193.5,
+     194.4
+    ]
+   ]
+  },
+  {
+   "id": 22,
+   "file": "audio/pidgin/p22.mp3",
+   "text": "You need help? Turn on voice for the extension make e read your money information give you.",
+   "start": 208.75,
+   "end": 215.1,
+   "alternates": [
+    [
+     193.5,
+     194.4
+    ],
+    [
+     203.8,
+     204.7
+    ],
+    [
+     206.9,
+     207.7
+    ]
+   ]
+  },
+  {
+   "id": 23,
+   "file": "audio/pidgin/p23.mp3",
+   "text": "The money wey remain no reach.",
+   "start": 221.21,
+   "end": 223.46,
+   "alternates": []
+  },
+  {
+   "id": 24,
+   "file": "audio/pidgin/p24.mp3",
+   "text": "This person no fit collect am.",
+   "start": 230.28,
+   "end": 231.9,
+   "alternates": []
+  },
+  {
+   "id": 25,
+   "file": "audio/pidgin/p25.mp3",
+   "text": "The money send no work.",
+   "start": 238.93,
+   "end": 240.36,
+   "alternates": []
+  },
+  {
+   "id": 26,
+   "file": "audio/pidgin/p26.mp3",
+   "text": "You don cancel the money send.",
+   "start": 247.96,
+   "end": 250.02,
+   "alternates": []
+  },
+  {
+   "id": 27,
+   "file": "audio/pidgin/p27.mp3",
+   "text": "Abeg fill all the boxes.",
+   "start": 257.67,
+   "end": 259.71,
+   "alternates": []
+  },
+  {
+   "id": 28,
+   "file": "audio/pidgin/p28.mp3",
+   "text": "This number no correct.",
+   "start": 266.98,
+   "end": 268.62,
+   "alternates": []
+  },
+  {
+   "id": 29,
+   "file": "audio/pidgin/p29.mp3",
+   "text": "Confirm the money send.",
+   "start": 277.62,
+   "end": 279.47,
+   "alternates": []
+  },
+  {
+   "id": 30,
+   "file": "audio/pidgin/n01.mp3",
+   "text": "No eva tell any person ya secret code or ya OTP code.",
+   "start": 4.15,
+   "end": 9.0,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 31,
+   "file": "audio/pidgin/n02.mp3",
+   "text": "Watch out : check di name fo di person wey go collect before yu confirm.",
+   "start": 13.6,
+   "end": 18.4,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 32,
+   "file": "audio/pidgin/n03.mp3",
+   "text": "If dis transaction pass, yu no fit cancel am again.",
+   "start": 23.9,
+   "end": 27.85,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 33,
+   "file": "audio/pidgin/n04.mp3",
+   "text": "Nobody fo bank go eva ask yu ya password.",
+   "start": 33.2,
+   "end": 36.65,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 34,
+   "file": "audio/pidgin/n05.mp3",
+   "text": "Code no correct. Try again.",
+   "start": 41.35,
+   "end": 43.95,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 35,
+   "file": "audio/pidgin/n06.mp3",
+   "text": "Some problem don happen. Try again small time.",
+   "start": 49.8,
+   "end": 54.15,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 36,
+   "file": "audio/pidgin/n07.mp3",
+   "text": "Service no dey work for now.",
+   "start": 60.4,
+   "end": 62.4,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 37,
+   "file": "audio/pidgin/n08.mp3",
+   "text": "Amount no correct.",
+   "start": 67.95,
+   "end": 69.9,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 38,
+   "file": "audio/pidgin/n09.mp3",
+   "text": "Di amount pass di limit wey yu fit send.",
+   "start": 74.3,
+   "end": 76.95,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 39,
+   "file": "audio/pidgin/n10.mp3",
+   "text": "Check di information dem well before yu confirm.",
+   "start": 83.25,
+   "end": 87.65,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 40,
+   "file": "audio/pidgin/n11.mp3",
+   "text": "Summary fo ya send money",
+   "start": 92.65,
+   "end": 94.9,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": [
+    [
+     99.3,
+     99.7
+    ]
+   ]
+  },
+  {
+   "id": 41,
+   "file": "audio/pidgin/n12.mp3",
+   "text": "Ya transfer dey process.",
+   "start": 101.65,
+   "end": 104.15,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 42,
+   "file": "audio/pidgin/n13.mp3",
+   "text": "Money wey remain after transaction",
+   "start": 115.25,
+   "end": 117.9,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": [
+    [
+     109.6,
+     111.2
+    ]
+   ]
+  },
+  {
+   "id": 43,
+   "file": "audio/pidgin/n14.mp3",
+   "text": "Ol money wey yu go pay",
+   "start": 122.45,
+   "end": 124.15,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 44,
+   "file": "audio/pidgin/n15.mp3",
+   "text": "Dem don send confirmation code fo ya SMS.",
+   "start": 129.8,
+   "end": 133.5,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 45,
+   "file": "audio/pidgin/n16.mp3",
+   "text": "Yu don try plenty time. Dem don lock ya account for now.",
+   "start": 139.25,
+   "end": 143.4,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 46,
+   "file": "audio/pidgin/n17.mp3",
+   "text": "Ya time wan finish. Enter ya account again.",
+   "start": 148.8,
+   "end": 152.35,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 47,
+   "file": "audio/pidgin/n18.mp3",
+   "text": "Network don cut. Check ya network.",
+   "start": 157.3,
+   "end": 161.3,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 48,
+   "file": "audio/pidgin/n19.mp3",
+   "text": "Phone number no correct.",
+   "start": 165.1,
+   "end": 166.8,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 49,
+   "file": "audio/pidgin/n20.mp3",
+   "text": "Transaction don fail.",
+   "start": 173.2,
+   "end": 175.15,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 50,
+   "file": "audio/pidgin/n21.mp3",
+   "text": "Reference fo di transaction",
+   "start": 181.7,
+   "end": 183.95,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 51,
+   "file": "audio/pidgin/n22.mp3",
+   "text": "New person wey go collect",
+   "start": 189.45,
+   "end": 191.4,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 52,
+   "file": "audio/pidgin/n23.mp3",
+   "text": "Put di amount wey yu wan send.",
+   "start": 199.15,
+   "end": 201.25,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 53,
+   "file": "audio/pidgin/n24.mp3",
+   "text": "Choose di person wey go collect.",
+   "start": 205.65,
+   "end": 207.7,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 54,
+   "file": "audio/pidgin/n25.mp3",
+   "text": "Go front",
+   "start": 212.6,
+   "end": 213.85,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 55,
+   "file": "audio/pidgin/n26.mp3",
+   "text": "Go back",
+   "start": 215.35,
+   "end": 216.45,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 56,
+   "file": "audio/pidgin/n27.mp3",
+   "text": "Change am",
+   "start": 217.95,
+   "end": 219.05,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 57,
+   "file": "audio/pidgin/n28.mp3",
+   "text": "Try again",
+   "start": 220.8,
+   "end": 222.0,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 58,
+   "file": "audio/pidgin/n29.mp3",
+   "text": "Close am",
+   "start": 223.65,
+   "end": 224.6,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 59,
+   "file": "audio/pidgin/n30.mp3",
+   "text": "Enter account",
+   "start": 228.9,
+   "end": 230.3,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 60,
+   "file": "audio/pidgin/n31.mp3",
+   "text": "Comot fo account",
+   "start": 232.5,
+   "end": 233.85,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 61,
+   "file": "audio/pidgin/n32.mp3",
+   "text": "List fo ol ya old transaction dem",
+   "start": 237.1,
+   "end": 240.9,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  },
+  {
+   "id": 62,
+   "file": "audio/pidgin/n33.mp3",
+   "text": "No new transaction dey.",
+   "start": 244.8,
+   "end": 246.6,
+   "source": "../../../sources-audio/pidgin-nouvelles-phrases.m4a",
+   "alternates": []
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Selah Financial Bridge",
+  "version": "3.0.1",
+  "description": "Selah Financial Bridge : traduction locale (Pidgin, Duala, Fulfulde), lecture vocale et commande vocale FR/EN, simulation financière protégée.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>",
+        "file:///*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "dictionaries/*.json",
+        "audio/pidgin/*.mp3",
+        "audio/duala/*.mp3"
+      ],
+      "matches": [
+        "<all_urls>",
+        "file:///*"
+      ]
+    }
+  ]
+}

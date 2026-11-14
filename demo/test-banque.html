@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selah Financial Bridge - Accueil Chaleureux</title>
+    <style>
+    /* Icônes locales (sans Internet) : remplace Font Awesome chargé depuis un CDN */
+    .fa-solid { display:inline-block; font-style:normal; line-height:1; } /* seules les icônes œil (afficher/masquer) sont conservées */
+    .fa-eye, .fa-eye-slash { width:1.15em; height:1.15em; background:currentColor; -webkit-mask:center/contain no-repeat; mask:center/contain no-repeat; }
+    .fa-eye { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z'/><circle cx='12' cy='12' r='3'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z'/><circle cx='12' cy='12' r='3'/></svg>"); }
+    .fa-eye-slash { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'/><line x1='1' y1='1' x2='23' y2='23'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'/><line x1='1' y1='1' x2='23' y2='23'/></svg>"); }
+        :root {
+            --primary: #059669;
+            --primary-light: #10b981;
+            --primary-bg: #ecfdf5;
+            --dark: #0f172a;
+            --gray-bg: #f8fafc;
+            --card-border: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--gray-bg);
+            color: var(--text-main);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 260px;
+            background: var(--dark);
+            color: white;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            color: #94a3b8;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .menu-item.active, .menu-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--card-border);
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* BANNIÈRE D'ACCUEIL CHALEUREUSE (NOUVEAU) */
+        .welcome-banner {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .welcome-banner h2 {
+            margin: 0 0 8px 0;
+            font-size: 22px;
+        }
+
+        .welcome-banner p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .welcome-icon::before { content: "S"; }
+        .welcome-icon {
+            font-size: 36px; font-weight: 800; font-family: Georgia, "Times New Roman", serif; flex-shrink: 0; border: 2px solid rgba(255,255,255,0.6);
+            background: rgba(255, 255, 255, 0.2);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Dashboard Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .balance-header {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .balance-amount {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--dark);
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eye-btn {
+            cursor: pointer;
+            color: var(--text-muted);
+            font-size: 18px;
+        }
+
+        /* Dynamic Form */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            font-size: 15px;
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .fee-badge {
+            background: var(--primary-bg);
+            color: var(--primary);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .alert-box {
+            background: #fffbe6;
+            border-left: 4px solid #f59e0b;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #b45309;
+            margin-bottom: 20px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+        }
+
+        .btn-submit:hover {
+            background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+
+        .input-with-eye { position: relative; display:flex; align-items:center; }
+        .input-with-eye .form-control { padding-right:48px; }
+        .field-eye { position:absolute; right:6px; top:50%; transform:translateY(-50%); width:36px; height:36px; display:flex; align-items:center; justify-content:center; border:0; background:transparent; color:var(--text-muted); cursor:pointer; padding:0; line-height:1; }
+        .field-hint { display:block; color:var(--text-muted); font-size:11px; margin-top:4px; }
+        .password-row { position:relative; margin:16px 0; text-align:left; }
+        .password-row label { display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+        .password-row input { width:100%; padding:12px 46px 12px 12px; border:1px solid var(--card-border); border-radius:8px; font-size:16px; }
+        .demo-hint { font-size:11px; color:#64748b; text-align:left; margin:6px 0 0; }
+        .error-message { color:#b91c1c; font-size:12px; min-height:18px; text-align:left; margin:8px 0; }
+        .modal-content { max-height:90vh; overflow:auto; }
+        .lang-choice { display:flex; gap:12px; margin-top:18px; }
+        .lang-choice .btn-submit { flex:1; }
+        .lang-sub { color: var(--text-muted); font-size: 13px; margin: 4px 0 0; }
+        /* Modal Confirmation */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .success-icon {
+            width: 60px; height: 60px;
+            background: var(--primary-bg);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; margin: 0 auto 16px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Choix de la langue du site, dès l'arrivée -->
+    <div class="modal" id="langModal" data-safinum-ignore="true" role="dialog" aria-modal="true" aria-labelledby="langTitle" style="display:flex; z-index:2000;">
+        <div class="modal-content">
+            <h3 id="langTitle" style="margin: 0;">Choisissez la langue du site</h3>
+            <p class="lang-sub" lang="en">Choose the language of the site</p>
+            <div class="lang-choice">
+                <button type="button" class="btn-submit" onclick="chooseLanguage('fr')">Français</button>
+                <button type="button" class="btn-submit" onclick="chooseLanguage('en')">English</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div>
+            <div class="brand">Selah Bridge</div>
+            <a href="#" class="menu-item active" data-i18n="navDash"></a>
+            <a href="#" class="menu-item" data-i18n="navTransfer"></a>
+            <a href="#" class="menu-item" data-i18n="navAccount"></a>
+            <a href="#" class="menu-item" data-i18n="navSettings"></a>
+        </div>
+        <div class="menu-item" data-i18n="secure"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <div class="header-bar">
+            <div>
+                <h1 style="margin: 0; font-size: 24px;" data-i18n="title"></h1>
+                <span style="color: var(--text-muted); font-size: 14px;" data-i18n="subtitle"></span>
+            </div>
+            <div class="user-profile">
+                <div class="avatar">AE</div>
+                <span style="font-size: 14px; font-weight: 600;">Angela Emmanuelle</span>
+            </div>
+        </div>
+
+        <div class="welcome-banner">
+            <div>
+                <h2 data-i18n="welcomeTitle"></h2>
+                <p data-i18n="welcomeText"></p>
+            </div>
+            <div class="welcome-icon" aria-hidden="true"></div>
+        </div>
+
+        <div class="grid">
+
+            <div>
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="balance-header">
+                        <span data-i18n="balance"></span>
+                        <i class="fa-solid fa-eye-slash eye-btn" id="toggleEye" onclick="toggleBalance()" role="button"></i>
+                    </div>
+                    <div class="balance-amount" id="balanceDisplay">•••••••• FCFA</div>
+                    <span style="color: var(--primary); font-size: 13px; font-weight: 600;" data-i18n="secure"></span>
+                </div>
+
+                <div class="card">
+                    <h3 style="margin-top: 0; font-size: 16px;" data-i18n="help"></h3>
+                    <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 0;" data-i18n="helpText"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-top: 0; font-size: 18px; margin-bottom: 20px;" data-i18n="transfer"></h3>
+
+                <div class="form-group">
+                    <label data-i18n="beneficiary"></label>
+                    <input type="text" class="form-control" value="Mme Zang" id="recipientInput">
+                </div>
+
+                <div class="form-group">
+                    <label data-i18n="amount"></label>
+                    <div class="input-with-eye">
+                        <input type="number" class="form-control" value="25000" min="1" step="1" id="amountInput" inputmode="numeric">
+                        <button type="button" class="field-eye" id="toggleAmountEye" onclick="toggleFieldVisibility('amountInput','toggleAmountEye')"><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <small class="field-hint" data-i18n="amountHint"></small>
+                </div>
+
+                <div class="fee-badge">
+                    <span data-i18n="fees"></span>
+                    <span id="feeDisplay">500 FCFA</span>
+                </div>
+
+                <div class="alert-box">
+                    <strong data-i18n="warning"></strong> <span data-i18n="warnText"></span>
+                </div>
+
+                <button class="btn-submit" onclick="showModal()" data-i18n="send"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fenêtre : mot de passe avant d'afficher le solde (simulation uniquement) -->
+    <div class="modal" id="revealModal" role="dialog" aria-modal="true" aria-labelledby="revealTitle">
+        <div class="modal-content">
+            <h3 id="revealTitle" style="margin: 0 0 10px 0;" data-i18n="balance"></h3>
+            <p style="color: var(--text-muted); font-size: 14px; margin: 0 0 12px 0;" data-i18n="revealIntro"></p>
+            <div class="password-row">
+                <label for="revealPassword" data-i18n="demoPassword"></label>
+                <div class="input-with-eye">
+                    <input type="password" id="revealPassword" autocomplete="off" data-i18n-ph="demoCodePh">
+                    <button type="button" class="field-eye" id="toggleRevealEye" onclick="toggleFieldVisibility('revealPassword','toggleRevealEye')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p class="demo-hint" data-i18n="demoHint"></p>
+                <p class="error-message" id="revealError" aria-live="polite"></p>
+            </div>
+            <button class="btn-submit" onclick="submitReveal()" style="margin-bottom: 8px;" data-i18n="validate"></button>
+            <button class="btn-submit" onclick="closeReveal()" style="background: transparent; color: var(--text-muted); box-shadow: none;" data-i18n="cancel"></button>
+        </div>
+    </div>
+
+    <!-- Modal de confirmation sécurisée (simulation uniquement) -->
+    <div class="modal" id="confirmModal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <h3 style="margin: 0 0 10px 0;" data-i18n="confirmTransfer"></h3>
+            <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 12px;" id="confirmText"></p>
+            <p style="font-size:13px;text-align:left;margin:8px 0;"><span data-i18n="fees"></span> : <strong id="modalFee">500 FCFA</strong></p>
+            <p style="font-size:13px;text-align:left;margin:8px 0;"><span data-i18n="totalDebited"></span> : <strong id="modalTotal">25 500 FCFA</strong></p>
+            <div class="password-row">
+                <label for="demoPassword" data-i18n="demoPassword"></label>
+                <div class="input-with-eye">
+                    <input type="password" id="demoPassword" autocomplete="off" data-i18n-ph="demoCodePh">
+                    <button type="button" class="field-eye" id="togglePasswordEye" onclick="toggleFieldVisibility('demoPassword','togglePasswordEye')"><i class="fa-solid fa-eye"></i></button>
+                </div>
+                <p class="demo-hint" data-i18n="demoHint"></p>
+                <p class="error-message" id="transferError" aria-live="polite"></p>
+            </div>
+            <button class="btn-submit" onclick="confirmTransfer()" style="margin-bottom: 8px;" data-i18n="confirmSend"></button>
+            <button class="btn-submit" onclick="closeModal()" style="background: transparent; color: var(--text-muted); box-shadow: none;" data-i18n="cancel"></button>
+        </div>
+    </div>
+
+    <script>
+        // Simulation locale uniquement : aucun argent réel et aucun serveur bancaire.
+        const DEMO_PASSWORD = "1234";
+        const INITIAL_BALANCE = 150000;
+        const TRANSFER_FEE = 500;
+        let currentBalance = INITIAL_BALANCE;
+        let balanceHidden = true; // le solde est masqué dès l'arrivée sur la page
+        let siteLang = "fr";
+
+        // Textes du site en français et en anglais (le service d'origine est bilingue ; l'extension traduit ensuite vers les langues locales).
+        const I18N = {
+            fr: {
+                navDash: "Tableau de bord", navTransfer: "Transfert", navAccount: "Compte", navSettings: "Paramètres", secure: "Sécurisé",
+                title: "Portail Financier Inclusif", subtitle: "Gérez vos opérations en toute simplicité",
+                welcomeTitle: "Bienvenue Angela !",
+                welcomeText: "Selah Bridge vous accompagne dans vos transactions financières. Utilisez l'extension pour traduire votre interface dans votre langue locale à tout moment.",
+                balance: "Solde", help: "Aide",
+                helpText: "Besoin d'aide ? Activez la synthèse vocale depuis l'extension pour écouter vos informations financières à haute voix.",
+                transfer: "Transfert", beneficiary: "Bénéficiaire", amount: "Montant", amountHint: "Montant en FCFA", fees: "Frais",
+                warning: "Avertissement", warnText: "Vérifiez bien le montant avant de valider votre transfert.", send: "Envoyer",
+                revealIntro: "Avant d'afficher votre solde, saisissez votre mot de passe.",
+                demoPassword: "Mot de passe de démonstration", demoCodePh: "Saisir le code de démonstration",
+                demoHint: "Code de démonstration : 1234. N'utilisez jamais un vrai mot de passe bancaire.",
+                validate: "Valider", cancel: "Annuler", confirmTransfer: "Confirmer le transfert", totalDebited: "Total débité", confirmSend: "Confirmer et envoyer",
+                confirmText: () => `Confirmez l'envoi de <strong id="modalAmount"></strong> vers <strong id="modalRecipient"></strong>.`,
+                badCode: "Code incorrect. Veuillez réessayer.", badAmount: "Montant invalide.", badRecipient: "Bénéficiaire invalide", noFunds: "Solde insuffisant",
+                okPrefix: "Transfert simulé réussi :", okTo: "vers", okFees: "Frais :"
+            },
+            en: {
+                navDash: "Dashboard", navTransfer: "Transfer", navAccount: "Account", navSettings: "Settings", secure: "Secure",
+                title: "Inclusive Financial Portal", subtitle: "Manage your transactions easily",
+                welcomeTitle: "Welcome Angela!",
+                welcomeText: "Selah Bridge supports you in your financial transactions. Use the extension to translate your interface into your local language at any time.",
+                balance: "Balance", help: "Help",
+                helpText: "Need help? Turn on voice synthesis from the extension to listen to your financial information aloud.",
+                transfer: "Transfer", beneficiary: "Beneficiary", amount: "Amount", amountHint: "Amount in FCFA", fees: "Fees",
+                warning: "Warning", warnText: "Check the amount carefully before confirming your transfer.", send: "Send",
+                revealIntro: "Before you see your balance, enter your password.",
+                demoPassword: "Demo password", demoCodePh: "Enter the demo code",
+                demoHint: "Demo code: 1234. Never use a real bank password.",
+                validate: "Confirm", cancel: "Cancel", confirmTransfer: "Confirm transfer", totalDebited: "Total debited", confirmSend: "Confirm and send",
+                confirmText: () => `Confirm sending <strong id="modalAmount"></strong> to <strong id="modalRecipient"></strong>.`,
+                badCode: "Incorrect code. Please try again.", badAmount: "Invalid amount.", badRecipient: "Invalid beneficiary", noFunds: "Insufficient balance",
+                okPrefix: "Simulated transfer successful:", okTo: "to", okFees: "Fees:"
+            }
+        };
+        const t = key => I18N[siteLang][key];
+        function applyLanguage() {
+            document.documentElement.lang = siteLang;
+            document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+            document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+            document.getElementById('confirmText').innerHTML = t('confirmText')();
+            document.getElementById('modalAmount').textContent = money(parseAmount());
+            document.getElementById('modalRecipient').textContent = document.getElementById('recipientInput').value.trim();
+        }
+        function chooseLanguage(lang) {
+            siteLang = lang;
+            applyLanguage();
+            document.getElementById('langModal').style.display = 'none';
+        }
+
+        const money = value => new Intl.NumberFormat('fr-FR').format(value) + " FCFA";
+        function parseAmount() {
+            const value = Number(document.getElementById('amountInput').value);
+            return Number.isFinite(value) ? Math.floor(value) : 0;
+        }
+        function renderBalance() {
+            const display = document.getElementById('balanceDisplay');
+            display.textContent = balanceHidden ? "•••••••• FCFA" : money(currentBalance);
+        }
+        function syncEye() {
+            document.getElementById('toggleEye').className = balanceHidden ? "fa-solid fa-eye-slash eye-btn" : "fa-solid fa-eye eye-btn";
+        }
+        function toggleBalance() {
+            // Masquer : immédiat. Afficher : uniquement après saisie du code dans la fenêtre dédiée.
+            if (!balanceHidden) { balanceHidden = true; syncEye(); renderBalance(); return; }
+            document.getElementById('revealPassword').value = "";
+            document.getElementById('revealError').textContent = "";
+            document.getElementById('revealModal').style.display = 'flex';
+            setTimeout(() => document.getElementById('revealPassword').focus(), 50);
+        }
+        function closeReveal() {
+            document.getElementById('revealModal').style.display = 'none';
+            document.getElementById('revealPassword').value = "";
+            document.getElementById('revealError').textContent = "";
+        }
+        function submitReveal() {
+            if (document.getElementById('revealPassword').value !== DEMO_PASSWORD) {
+                document.getElementById('revealError').textContent = t('badCode');
+                return;
+            }
+            balanceHidden = false;
+            closeReveal();
+            syncEye();
+            renderBalance();
+        }
+        function toggleFieldVisibility(inputId, buttonId) {
+            const input = document.getElementById(inputId);
+            const button = document.getElementById(buttonId);
+            const visible = input.type === "password" || input.type === "number";
+            if (inputId === "amountInput") {
+                // Le montant est numérique ; on masque visuellement son contenu sans perdre la valeur.
+                input.type = visible ? "password" : "number";
+            } else {
+                input.type = visible ? "text" : "password";
+            }
+            button.innerHTML = visible
+                ? '<i class="fa-solid fa-eye-slash"></i>'
+                : '<i class="fa-solid fa-eye"></i>';
+        }
+        function showModal() {
+            const amount = parseAmount();
+            const recipient = document.getElementById('recipientInput').value.trim();
+            document.getElementById('transferError').textContent = "";
+            if (!recipient) { showToast(t('badRecipient'), true); return; }
+            if (amount <= 0) { showToast(t('badAmount'), true); return; }
+            document.getElementById('modalAmount').textContent = money(amount);
+            document.getElementById('modalRecipient').textContent = recipient;
+            document.getElementById('modalFee').textContent = money(TRANSFER_FEE);
+            document.getElementById('modalTotal').textContent = money(amount + TRANSFER_FEE);
+            document.getElementById('demoPassword').value = "";
+            document.getElementById('confirmModal').style.display = 'flex';
+            setTimeout(() => document.getElementById('demoPassword').focus(), 50);
+        }
+        function closeModal() {
+            document.getElementById('confirmModal').style.display = 'none';
+            document.getElementById('transferError').textContent = "";
+        }
+        function showToast(message, isError=false, prefix="") {
+            const old = document.getElementById('transferToast');
+            if (old) old.remove();
+            const toast = document.createElement('div');
+            toast.id = 'transferToast';
+            if (prefix) {
+                const label = document.createElement("span");
+                label.textContent = prefix;
+                label.style.marginRight = "5px";
+                toast.appendChild(label);
+                const details = document.createElement("span");
+                details.textContent = message;
+                toast.appendChild(details);
+            } else {
+                toast.textContent = message;
+            }
+            toast.style.cssText = `position:fixed;top:20px;right:20px;background:${isError?'#b91c1c':'#059669'};color:white;padding:15px 22px;border-radius:9px;box-shadow:0 4px 12px rgba(0,0,0,.15);font-weight:600;z-index:9999;max-width:360px`;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 4500);
+        }
+        function confirmTransfer() {
+            const password = document.getElementById('demoPassword').value;
+            const amount = parseAmount();
+            const total = amount + TRANSFER_FEE;
+            const error = document.getElementById('transferError');
+            if (password !== DEMO_PASSWORD) { error.textContent = t('badCode'); return; }
+            if (amount <= 0) { error.textContent = t('badAmount'); return; }
+            if (total > currentBalance) { error.textContent = t('noFunds'); return; }
+            currentBalance -= total;
+            renderBalance();
+            const recipient = document.getElementById('recipientInput').value.trim();
+            closeModal();
+            // Le nouveau solde n'est jamais affiché ici : il reste masqué tant que le code n'a pas été saisi.
+            showToast(`${money(amount)} ${t('okTo')} ${recipient}. ${t('okFees')} ${money(TRANSFER_FEE)}.`, false, t('okPrefix'));
+        }
+        document.getElementById('revealPassword').addEventListener('keydown', e => { if (e.key === 'Enter') submitReveal(); });
+        document.getElementById('demoPassword').addEventListener('keydown', e => { if (e.key === 'Enter') confirmTransfer(); });
+        applyLanguage();
+        renderBalance();
+    </script>
+</body>
+</html>

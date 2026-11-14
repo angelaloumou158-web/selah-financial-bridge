@@ -1,0 +1,63 @@
+SELAH FINANCIAL BRIDGE — LICENCE
+Copyright (c) 2026 Équipe Selah (Tech Dames)
+Membres : LOUMOU ANGELA EMMANUELLE ; MBOLE KWENE EMMANUELLE ; BIKELE CRESSY DARELLE
+TOUS DROITS RÉSERVÉS.
+
+Ce projet est un prototype réalisé pour le SAFINUM Innovate Challenge.
+
+────────────────────────────────────────────────────────────
+1. PROPRIÉTÉ
+────────────────────────────────────────────────────────────
+
+Le code source, les traductions (Pidgin camerounais, Duala, Fulfulde), les
+enregistrements vocaux, les textes et la documentation de ce projet sont la
+propriété de l'équipe Selah et, pour les voix, des membres de l'équipe qui les ont
+enregistrées.
+
+Conformément à l'article 11 du règlement du concours, la participation au
+challenge n'entraîne aucun transfert de propriété intellectuelle au profit des
+organisateurs ou des partenaires.
+
+────────────────────────────────────────────────────────────
+2. AUTORISATION LIMITÉE POUR LE CONCOURS
+────────────────────────────────────────────────────────────
+
+Les organisateurs, le jury et les partenaires du SAFINUM Innovate Challenge
+sont autorisés à installer, exécuter, copier et faire écouter ce prototype
+uniquement pour l'évaluer et le présenter dans le cadre du concours.
+
+────────────────────────────────────────────────────────────
+3. TOUTE AUTRE UTILISATION EST INTERDITE SANS ACCORD ÉCRIT
+────────────────────────────────────────────────────────────
+
+Sans accord écrit préalable de l'équipe, il est interdit de :
+- copier, modifier, publier ou redistribuer tout ou partie du projet ;
+- l'utiliser dans un autre produit ou service, gratuit ou payant ;
+- l'utiliser à des fins commerciales ;
+- utiliser les traductions ou les voix pour entraîner des modèles d'intelligence
+  artificielle ou des synthèses vocales.
+
+────────────────────────────────────────────────────────────
+4. COMPOSANTS TIERS (déclarés)
+────────────────────────────────────────────────────────────
+
+Ces composants ne sont pas la propriété de l'équipe et restent soumis à leurs
+propres conditions :
+- API Web Speech du navigateur Chrome (reconnaissance et synthèse vocale) :
+  fournie par le navigateur, non par ce projet. Dans Chrome, la reconnaissance
+  vocale peut envoyer l'audio du micro à un service du fournisseur du navigateur.
+  Ne jamais dire de données confidentielles pendant la démonstration.
+- Outils d'aide à la traduction (utilisés pendant le développement, non inclus dans
+  l'extension) : mode IA de Google, dictionnaire en ligne Glosbe, et documentation
+  recueillie auprès du centre d'initiation à la culture Duala (CIDE-COLAD).
+- Icônes de la page de test : dessinées par l'équipe (symboles Unicode et SVG intégrés), aucune ressource externe.
+- Aucune API payante, aucun serveur propre au projet, aucune donnée collectée.
+
+────────────────────────────────────────────────────────────
+5. AVERTISSEMENT
+────────────────────────────────────────────────────────────
+
+Prototype de démonstration : opérations exclusivement simulées. Ne pas utiliser
+avec de vrais comptes ni de vrais mots de passe. Les traductions doivent être
+validées par des locuteurs compétents avant tout usage réel. Le projet est fourni
+« en l'état », sans garantie.
